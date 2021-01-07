@@ -10,4 +10,4 @@ puts "----------"
 # Your code goes here ...
 puts "Company revenue: #{Store.sum(:annual_revenue)}"
 puts "Company Average Annual Revenue: #{Store.sum(:annual_revenue) / Store.count}"
-puts "Number of stores generating > 1M: #{Store.where("annual_revenue > 1000000").count}"
+puts "Number of stores generating > 1M: #{Store.where("annual_revenue > 1000000").size}"
